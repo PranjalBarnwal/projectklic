@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .homecontent-container {
   display: flex;
   flex-direction: column;
@@ -8,13 +14,15 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+  border-radius: 0 0 50% 50%;
+ 
 }
 
 .heading {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 4rem;
-
+  font-size: 3rem;
   padding: 1rem;
+  animation: 3s slide-left;
 }
 
 .sub-heading {
@@ -23,11 +31,12 @@
   font-weight: 300;
   font-size: 1.5rem;
   max-width: 60rem;
+  animation: 3s slide-right;
 }
 
 .homecontent-container button {
   font-family: "Josefin Sans", sans-serif;
-  margin: 1rem;
+  margin: 2rem;
   padding: 0.7rem;
   border-radius: 30px;
 
@@ -46,3 +55,31 @@
 .homecontent-container button:hover{
     translate: 0px -7px;
 }
+
+@keyframes slide-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
