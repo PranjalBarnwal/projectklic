@@ -14,7 +14,7 @@ const Nav = () => {
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Service</a></li>
-        <li className='page-dropdown'><a href="#">Pages</a> <span><MdOutlineKeyboardArrowDown/></span>
+        <li className='page-dropdown'><a href="#">Pages</a> <MdOutlineKeyboardArrowDown/>
         {/* <ul className="sublist">
             <li>FAQ</li>
             <li>TEAM</li>

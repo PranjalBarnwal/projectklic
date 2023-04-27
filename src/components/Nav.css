@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 
+*{
+    box-sizing: border-box;
+}
 .page-dropdown{
     display: flex;
    
@@ -8,6 +11,9 @@
 img{
     width: 7rem;
 }
+img:hover{
+    cursor: pointer;
+}
 li{
     list-style: none;
     padding: 1.5rem;
@@ -15,8 +21,15 @@ li{
     transition:all ease-in-out 0.1s;
 }
 li:hover{
-    border-bottom:2px solid #e7e96a;
+    border-bottom:1px solid #6acbe9;
+    
+   
 }
+
+li a:hover{
+    color: #6AC0E9;
+}
+
 .nav-container{
     display: flex;
     border-bottom: 1px solid black;
@@ -37,6 +50,11 @@ li:hover{
     justify-content: center;
 
 }
+
+.extra-icons:hover{
+    cursor: pointer;
+}
+
 .nav-elements{
     display: flex;
     justify-content: center;
