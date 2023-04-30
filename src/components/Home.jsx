@@ -2,7 +2,9 @@ import React, { useEffect } from "react";
 import Nav from "./Nav";
 import Box from "./Box";
 import AOS from "aos";
+import Section3 from "./Section3";
 import "aos/dist/aos.css";
+import Section4 from "./Section4";
 import HomeContent from "./HomeContent";
 import { TbCertificate } from "react-icons/tb";
 import { FaLeaf } from "react-icons/fa";
@@ -10,9 +12,7 @@ import { BiBadgeCheck } from "react-icons/bi";
 import { BsArrowRightShort } from "react-icons/bs";
 import "./Home.css";
 
-
 const Home = () => {
- 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -20,9 +20,7 @@ const Home = () => {
   return (
     <div className="home-parent">
       <div className="home-container">
-        {/* <div className='nav-sticky'> */}
         <Nav />
-        {/* </div> */}
         <HomeContent />
       </div>
       <div className="section2">
@@ -38,6 +36,8 @@ const Home = () => {
           </a>
         </p>
       </div>
+      <Section3/>
+      <Section4/>
     </div>
   );
 };

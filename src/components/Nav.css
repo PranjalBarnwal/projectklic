@@ -1,13 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
 
 *{
     box-sizing: border-box;
 }
 .page-dropdown{
     display: flex;
-   
+    position: relative;
 }
 
+
+.sublist{
+    position: absolute;
+    top: 4rem;
+    /* display: none; */
+    visibility: hidden;
+    
+    opacity: 0;
+    font-family: "Josefin Sans";
+    font-weight: 500;
+    left: 1.2rem;
+    background-color: aliceblue;
+    transition: all 0.3s;
+}
+
+.page-dropdown:hover .sublist{
+  
+    visibility: visible;
+    opacity: 1;
+}
+
+.sublist>li{
+    padding: 0.5rem;
+}
 img{
     width: 7rem;
 }
@@ -15,6 +40,7 @@ img:hover{
     cursor: pointer;
 }
 li{
+    cursor: pointer;
     list-style: none;
     padding: 1.5rem;
     box-sizing: border-box;
@@ -30,11 +56,20 @@ li a:hover{
     color: #6AC0E9;
 }
 
-.nav-container{
+/* .nav-container{
     display: flex;
     border-bottom: 1px solid black;
 
-}
+} */
+
+.nav-container{
+  
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid black;
+    z-index: 1;
+  }
+  
 .logo-container{
     flex: 2;
     display: flex;

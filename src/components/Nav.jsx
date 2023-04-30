@@ -15,13 +15,13 @@ const Nav = () => {
         <li><a href="#">About</a></li>
         <li><a href="#">Service</a></li>
         <li className='page-dropdown'><a href="#">Pages</a> <MdOutlineKeyboardArrowDown/>
-        {/* <ul className="sublist">
+        <ul className="sublist">
             <li>FAQ</li>
             <li>TEAM</li>
             <li>404 Page</li>
             <li>News</li>
             <li>Single News</li>
-        </ul> */}
+        </ul>
         </li>
         <li><a href="#">Contact</a></li>
       </div>
@@ -29,7 +29,7 @@ const Nav = () => {
 <AiOutlineSearch/>
 <RxHamburgerMenu/>
       </div>
-    
+  
     </div>
   )
 }

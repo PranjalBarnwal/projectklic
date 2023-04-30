@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
+
+
+.section4{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    
+    
+    background-image: linear-gradient(to right bottom, #4093e6, #3c7dc5, #3667a4, #2e5385, #253f67, #20365a, #1a2d4d, #152541, #132440, #11233f, #0e223f, #0c213e);
+    height: 100vh;
+    width: 100vw;
+    
+
+    background-color: aqua;
+  display: grid ;
+  grid-template-columns: repeat(21,1fr);
+  grid-template-rows: repeat(14,1fr);
+
+}
+
+.ar1 {
+
+  grid-area: 1 / 1 / 12 / 11;
+  background: url("https://images.unsplash.com/photo-1614000484734-9ee69aec92a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80");
+}
+
+.ar2 {
+    grid-area: 2 / 10 / 11 / 20;
+    padding: 3.5rem;
+    background-color: white;
+}
+.ar2>p:nth-child(1){
+font-family: "Josefin Sans";
+font-size: 1.5rem;
+font-weight: 500;
+padding-bottom: 2rem;
+}
+
+.ar2>p:nth-child(2){
+font-family: "Josefin Sans";
+font-size: 2rem;
+font-weight: 500;
+padding-bottom: 2rem;
+}
+.ar2>p:nth-child(3){
+font-family: "Josefin Sans";
+font-size: 1.4rem;
+font-weight: 500;
+padding-bottom: 1rem;
+}
+.ar2 button{
+    border: none;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    background: #59a2c4;
+    transition: ease-in-out 0.3s;
+}
+.ar2 button:hover{
+    translate: 0 -7px;
+}
+.ar3 {
+    border: 1rem solid rgb(8, 17, 45);
+    
+    background: url("https://images.unsplash.com/photo-1663075039771-1396ae640777?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1002&q=80");
+  grid-area: 7 / 1 / 14 / 9;
+}
+
+.ar4 {
+    border: 0px solid white;
+    border-radius: 50vw;
+    width: fit-content;
+    aspect-ratio: 1/1;
+    grid-area: 12 / 9 / 14 / 11;
+    font-size: 4rem;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation-name: ripple;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4;
+    }
+
+    80% {
+        box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+    }
+}
